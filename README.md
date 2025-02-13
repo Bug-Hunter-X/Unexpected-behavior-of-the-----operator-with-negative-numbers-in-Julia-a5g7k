@@ -1,0 +1,3 @@
+# Julia: Unexpected behavior of the `^` operator with negative numbers
+
+This repository demonstrates an uncommon error related to the use of the `^` operator (exponentiation) in Julia when dealing with negative numbers. The issue arises from the fact that  Julia's `^` operator can return a complex number when raised to a non-integer power, even for simple cases like -2^2. This behavior might be unexpected, especially for those coming from other programming languages. The provided `bug.jl` demonstrates this behavior, and `bugSolution.jl` offers a way to address the issue using the `^` operator with integer exponents or using `abs` to avoid complex numbers. 
